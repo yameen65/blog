@@ -19,7 +19,7 @@
         <form action="{{ route('comments.store', $post) }}" method="POST">
             @csrf
             <div>
-                <label for="body">Leave a comment:</label>
+                <label for="body">Write a Comment:</label>
                 <textarea name="body" id="body" rows="4"></textarea>
                 @error('body')
                     <div>{{ $message }}</div>
@@ -28,6 +28,6 @@
             <button type="submit">Post Comment</button>
         </form>
     @else
-        <p><a href="{{ route('login') }}">Log in</a> to leave a comment.</p>
+        <p><a href="{{ route('login') }}">Log in</a> to Write a Comment.</p>
     @endauth
 @endsection

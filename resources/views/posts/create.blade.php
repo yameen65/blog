@@ -10,6 +10,7 @@
                 <div>{{ $message }}</div>
             @enderror
         </div>
+        <br>
         <div>
             <label>Content</label>
             <textarea name="content">{{ old('content') }}</textarea>
@@ -17,6 +18,7 @@
                 <div>{{ $message }}</div>
             @enderror
         </div>
+        <br>
         <button type="submit">Create Post</button>
     </form>
 @endsection
