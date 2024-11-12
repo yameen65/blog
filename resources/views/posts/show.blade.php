@@ -10,7 +10,7 @@
         <div>
             <strong>{{ $comment->user->name }}</strong>
             <p>{{ $comment->body }}</p>
-            <small>Posted on {{ $comment->created_at->format('d/m/y') }}</small>
+            <small>Posted on {{ $comment->created_at->diffForHumans()}}</small>
         </div>
     @endforeach
 
