@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-    <a href="{{ route('posts.create') }}" class="btn btn-primary"><button>Create New Post</button></a>
+    <a href="{{ route('posts.create') }}" class="btn btn-primary">Create New Post</a>
 
     @foreach($posts as $post)
         <div class="post-preview mt-4">
@@ -9,7 +9,7 @@
             <h1>{{ $post->tittle }}</h1>
             <p>{{ Str::limit($post->content, 100) }}</p>
 
-            <a href="{{ route('posts.show', $post) }}" class="btn btn-link"><button>Read More</button></a>
+            <a href="{{ route('posts.show', $post) }}" class="btn btn-link">Read More</a>
         </div>
     @endforeach
 
